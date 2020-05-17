@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green">
+
+    <EditText
+        android:id="@+id/detailUpdate"
+        android:layout_width="314dp"
+        android:layout_height="172dp"
+        android:layout_alignRight="@+id/exerciseNameDetail"
+        android:background="@color/white"
+        android:hint="Feel free to write a description or notes for this exercise !"
+        android:inputType="text|textMultiLine"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Details : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/exerciseNameUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/titleUpdate">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dayOfWeekDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Day of the week :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDetail">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/titleUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:text="Update your exercise"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/exerciseNameDetail"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Exercise name : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/exerciseNameUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/repetitionDetail"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Repetition(s) : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/repetitionUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameDetail">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/setDetail"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Set(s) :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/setUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetitionDetail">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/exerciseNameUpdate"
+        android:layout_width="202dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/exerciseNameDetail"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="372dp"
+        android:layout_marginRight="372dp"
+        android:background="@color/white"
+        android:hint=" name of your exercise ?"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleUpdate">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/repetitionUpdate"
+        android:layout_width="200dp"
+        android:layout_height="33dp"
+        android:layout_alignRight="@+id/exerciseNameDetail"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="380dp"
+        android:layout_marginRight="380dp"
+        android:background="@color/white"
+        android:hint=" Number of reps ?"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameUpdate">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/setUpdate"
+        android:layout_width="241dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@+id/exerciseNameDetail"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="404dp"
+        android:layout_marginRight="404dp"
+        android:background="@color/white"
+        android:hint=" Number of sets ?"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetitionUpdate">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/dayOfWeekSpinnerUpdate"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:dropDownSelector="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/dayOfWeekDetail"
+        app:layout_constraintTop_toBottomOf="@+id/setUpdate">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/updateExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:background="@color/green"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailUpdate"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:background="@color/red"
+        android:text="Go Back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailUpdate"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/errorUpdate"
+        android:layout_width="727dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
